@@ -1,0 +1,38 @@
+.body-container{
+    height:551px;
+    width:100%;
+    display:flex;
+    padding: 0px 110px;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.body-left{
+    display:flex;
+    flex-direction:column;
+}
+
+.body-container h1{
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+    margin: 0px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color: #8b8b8b;
+    font-size:13px;
+}
+
+.body-left button{
+    margin-top: 23px;
+    width:fit-content;
+    padding: 15px 20px;
+    background: linear-gradient(to right, #c2f753, #4db770);
+    border: none;
+    cursor:pointer;
+    border-radius: 30px;
+    color: #141518;
+    font-weight: 600;
+}

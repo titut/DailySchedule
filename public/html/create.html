@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com"
+    />
+    <link href="./../fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="./../fontawesome/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/navbar.css">
+    <link rel="stylesheet" href="./../css/create.css">
+    <title>Create a schedule</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="title">
+      <img src="./../img/logo.png"/>
+      D<span class="period">●</span>S
+    </div>
+    <div class="options">
+      <div class="home">To Do</div>
+      <div class="today">Today</div>
+      <div class="create selected">Create</div>
+    </div>
+    <div class="TBD">
+      <span class="gradient-text">Manage</span>
+    </div>
+  </div>
+
+  <div class="body-container">
+    <div class="form-container first-page">
+      <h1>Create Schedule</h1>
+      <div class="label">Select a date:</div>
+      <input id="date" type="date" name="date"/>
+      <div class="button-container">
+        <button class="next nextone disabled">Next</button>
+      </div>
+    </div>
+
+    <div class="form-container second-page">
+      <h1>Add Activities</h1>
+      <div class="textbar">
+        <input id="activity" type="text" placeholder="Insert activity name here..."/><button>+</button>
+      </div>
+      <div class="timebar">
+        <div class="start-time">
+          <label>Start: </label>
+          <input id="start" type="time"/>
+        </div>
+        <span></span>
+        <div class="end-time">
+          <label>End: </label>
+          <input id="end" type="time"/>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="next back backtwo">Back</button>
+        <button class="next all-activity disabled">See All Actities <span id="all-activity-number">(0)</span></button>
+      </div>
+    </div>
+
+    <div class="form-container third-page">
+      <div class="header">Nov 16, 2023</div>
+      <div class="body">
+        <div class="first-row">
+          <div>Name</div>
+          <div>Start</div>
+          <div>End</div>
+          <div>Action</div>
+        </div>
+        <div class="main-row">
+          
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="next back backthree">Back</button>
+        <button class="next submit-schedule">Done!</span></button>
+      </div>
+    </div>
+
+  </div>
+
+  
+  <div class="edit-container">
+    <div class="form-container edit-popup">
+      <h1>Edit</h1>
+      <div class="textbar">
+        <input id="edit-activity" type="text" placeholder="Insert activity name here..."/><button>+</button>
+      </div>
+      <div class="timebar">
+        <div class="start-time">
+          <label>Start: </label>
+          <input id="edit-start" type="time"/>
+        </div>
+        <span></span>
+        <div class="end-time">
+          <label>End: </label>
+          <input id="edit-end" type="time"/>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="next back cancel-edit">Cancel</button>
+        <button class="next submit-edit">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./../js/create.js"></script>
+  <script src="./../js/navbar.js"></script>
+</body>
+</html>

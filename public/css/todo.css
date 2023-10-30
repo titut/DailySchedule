@@ -1,0 +1,162 @@
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent; 
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(139, 139, 139); 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #d4d4d4;
+}
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container{
+    width: 500px;
+    height: 551px;
+    border-radius:5px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    color: white;
+}
+
+.textbar{
+    width:100%;
+    display:flex;
+}
+
+.textbar input::placeholder{
+    color: rgb(208, 208, 208);
+}
+
+.textbar button{
+    border-radius: 50%;
+    width: 40px;
+    aspect-ratio: 1/1;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 27px;
+    cursor:pointer;
+}
+
+.form-container h1{
+    font-weight:400;
+    margin-bottom: 15px;
+}
+
+.form-container input{
+    width:100%;
+    background-color:transparent;
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right:none;
+    color: white;
+    font-size:16px;
+}
+
+.form-container input:focus{
+    outline: none;
+}
+
+.todolist{
+    width:100%;
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+    overflow: auto;
+    height:407px;
+}
+
+.todo{
+    margin-top: 10px;
+    background: #26282e;
+    width: 100%;
+    padding: 10px;
+    padding-left: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.todo2{
+    margin-top: 10px;
+    background: #26282e;
+    width: 95%;
+    padding: 10px;
+    padding-left: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.todo .text{
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.todo:hover{
+    background: rgb(29, 31, 35);
+    cursor: pointer;
+}
+
+.todo2:hover{
+    background: rgb(29, 31, 35);
+    cursor: pointer;
+}
+
+.selected{
+    background: rgb(29, 31, 35);
+}
+
+.icon{
+    background-color: transparent;
+    cursor:pointer;
+    border: none;
+    color: white;
+    padding: 0px 3px;
+}
+
+.caret{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 25px;
+    transition-duration: 100ms;
+}
+
+.square{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 25px;
+    transition-duration: 100ms;
+    font-size: 10px;
+}
+
+.rotate{
+    transform: translateY(-50%) translateX(-50%) rotate(180deg);
+}

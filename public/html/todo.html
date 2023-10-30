@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com"
+    />
+    <link rel="stylesheet" href="./../css/todo.css">
+    <link rel="stylesheet" href="./../css/navbar.css">
+    <link href="./../fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="./../fontawesome/css/solid.css" rel="stylesheet">
+    <title>Test</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="title">
+      <img src="./../img/logo.png"/>
+      D<span class="period">●</span>S
+    </div>
+    <div class="options">
+      <div class="home selected">To Do</div>
+      <div class="today">Today</div>
+      <div class="create">Create</div>
+    </div>
+    <div class="TBD">
+      <span class="gradient-text">Manage</span>
+    </div>
+  </div>
+
+  <div class="body-container">
+    <div class="form-container second-page">
+      <h1>To Do List</h1>
+      <div class="textbar">
+        <input id="activity" type="text" placeholder="Insert activity name here..."/><button class="add">+</button>
+      </div>
+      <div class="todolist">
+        <div class="todo">
+          <div class="caret"><i class="fa-sharp fa-solid fa-caret-up"></i></div>
+          <div class="text">Projects</div>
+          <div class="action">
+            <button class="icon edit-icon"><i class="fa-solid fa-pen"></i></button>
+            <button class="icon delete-icon"><i class="fa-sharp fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+        <div class="todo2">
+          <div class="square"><i class="fa-sharp fa-solid fa-square"></i></div>
+          <div class="text">Projects</div>
+          <div class="action">
+            <button class="icon edit-icon"><i class="fa-solid fa-pen"></i></button>
+            <button class="icon delete-icon"><i class="fa-sharp fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./../js/navbar.js"></script>
+  <script src="./../js/todo.js"></script>
+</body>
+</html>

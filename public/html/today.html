@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com"
+    />
+    <link href="./../fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="./../fontawesome/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/navbar.css">
+    <link rel="stylesheet" href="./../css/home.css">
+    <title>Create a schedule</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="title">
+      <img src="./../img/logo.png"/>
+      D<span class="period">●</span>S
+    </div>
+    <div class="options">
+      <div class="home">To Do</div>
+      <div class="today selected">Today</div>
+      <div class="create">Create</div>
+    </div>
+    <div class="TBD">
+      <span class="gradient-text">Manage</span>
+    </div>
+  </div>
+
+  <div id="header"></div>
+  <div id="body-container">
+    <div class="slot">
+      <div class="slot-box"></div>
+    </div>
+  </div>
+  <div class="current-activity">
+    <div>Current:</div>
+    <div>None</div>
+  </div>
+  <div class="time-remaining">
+    <div>Time left:</div>
+    <div>None</div>
+  </div>
+  <div class="task-completed">
+    <div>Completed:</div>
+    <div>None</div>
+  </div>
+  <div class="task-remaining">
+    <div>Remaining:</div>
+    <div>None</div>
+  </div>
+  <script src="./../js/today.js"></script>
+  <script src="./../js/navbar.js"></script>
+</body>
+</html>

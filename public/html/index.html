@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com"
+    />
+    <link rel="stylesheet" href="./../css/navbar.css">
+    <link rel="stylesheet" href="./../css/index.css">
+    <title>Daily Schedule</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="title">
+        <img src="./../img/logo.png"/>
+        D<span class="period">●</span>S
+      </div>
+      <div class="options">
+        <div class="home">To Do</div>
+        <div class="today">Today</div>
+        <div class="create">Create</div>
+      </div>
+      <div class="TBD">
+        <span class="gradient-text">Manage</span>
+      </div>
+    </div>
+
+    <div class="body-container">
+      <div class="body-left">
+        <h1>Start Your Day</h1>
+        <div class="subtitle">Create schedules and track your progress throughout the day.</div>
+        <button class="get-started-button">Get Started Now!</button>
+      </div>
+    </div>
+
+    <script src="./../js/navbar.js"></script>
+    <script src="./../js/index.js"></script>
+  </body>
+</html>
